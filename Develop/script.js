@@ -22,22 +22,14 @@ function generatePassword()
   {
     num = prompt("How long do you want your password to be? Please input a number.");
     num = num*1;
-    if(typeof(num)=== "number")//Checks if the input is a number.
+    if(num >= 8 && num <=108)
     {
       numValid = true;
     }
     else
     {
-      alert("Please type a number.");
-    }
-    if(numValid && num >= 8 && num <=108)
-    {
-
-    }
-    else
-    {
       numValid = false;
-      alert("Passwords must be between 8 and 108 characters.");
+      alert("Password length must be a number between 8 and 108.");
     }
   }
   var usableCharacters = [];
