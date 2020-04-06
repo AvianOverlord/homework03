@@ -74,7 +74,7 @@ function generatePassword()
     }
   }
 
-  var password;
+  var password = "";
   for(var i = 0; i < num; i++)
   {
     var chosenSymbolIndex = Math.floor(Math.random*usableCharacters.length);
