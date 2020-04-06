@@ -89,9 +89,13 @@ function generatePassword()
   var password = "";
   for(var i = 0; i < num; i++)
   {
-    var chosenSymbolIndex = Math.floor(Math.random*usableCharacters.length);
+    var chosenSymbolIndex = Math.floor(Math.random()*usableCharacters.length);
     var chosenSymbol = usableCharacters[chosenSymbolIndex];
     password = password.concat(chosenSymbol);
+    console.log("USL:" + usableCharacters.length);
+    console.log("CSI:" + chosenSymbolIndex);
+    console.log("S:" + chosenSymbol);
+    console.log("P:" + password);
   }
 
   return password;
