@@ -22,7 +22,7 @@ function generatePassword()
   {
     num = prompt("How long do you want your password to be? Please input a number.");
     num = num*1;
-    if(typeof(num)===number)//Checks if the input is a number.
+    if(typeof(num)=== "number")//Checks if the input is a number.
     {
       numValid = true;
     }
