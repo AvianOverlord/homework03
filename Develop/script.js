@@ -53,19 +53,31 @@ function generatePassword()
     var useSpecial = confirm("Do you want your password to include special characters?");
     if(useLowercase)
     {
-      usableCharacters.push(lowercase);
+      for(var i=0; i<lowercase.length; i++)
+      {
+        usableCharacters.push(lowercase[i]);
+      }
     }
     if(useUppercase)
     {
-      usableCharacters.push(uppercase);
+      for(var i=0; i<uppercase.length; i++)
+      {
+        usableCharacters.push(uppercase[i]);
+      }
     }
     if(useNumbers)
     {
-      usableCharacters.push(numbers);
+      for(var i=0; i<numbers.length; i++)
+      {
+        usableCharacters.push(numbers[i]);
+      }
     }
     if(useSpecial)
     {
-      usableCharacters.push(specialChars);
+      for(var i=0; i<specialChars.length; i++)
+      {
+        usableCharacters.push(specialChars[i]);
+      }
     }
 
     if(usableCharacters.length === 0)
